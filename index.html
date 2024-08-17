@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css">
-	<script src="index.js" defer></script>
     <title>Yılan Oyunu</title>
 </head>
 <body>
-	<center><h3>Bu yılan oyunu, Ercan Işık tarafından yapay zekaya yaptırılmıştır.</h3></center>
+    <h6>Bu yılan oyunu, Ercan Işık tarafından yapay zekaya yaptırılmıştır.</h6>
+    <div class="score" id="score">Puan: 0</div>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <div class="controls">
         <button id="pauseBtn">Duraklat</button>
         <button id="newGameBtn">Yeni Oyun</button>
     </div>
+    <div class="settings">
+        <label for="speedSelect">Hız:</label>
+        <select id="speedSelect">
+            <option value="1">En Yavaş</option>
+            <option value="2">Yavaş</option>
+            <option value="3" selected>Normal</option>
+            <option value="4">Hızlı</option>
+            <option value="5">Çok Hızlı</option>
+        </select>
+        <label for="snakeColorSelect">Yılan Rengi:</label>
+        <input type="color" id="snakeColorSelect" value="#008000">
+        <label for="snakeHeadColorSelect">Yılan Baş Rengi:</label>
+        <input type="color" id="snakeHeadColorSelect" value="#006400">
+        <label for="foodColorSelect">Yiyecek Rengi:</label>
+        <input type="color" id="foodColorSelect" value="#FF0000">
+        <label for="starFoodColorSelect">Yıldız Yiyecek Rengi:</label>
+        <input type="color" id="starFoodColorSelect" value="#FFD700">
+    </div>
 </body>
 </html>
+
